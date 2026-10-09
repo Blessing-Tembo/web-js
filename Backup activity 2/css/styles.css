@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+.header-section {
+    padding: 24px 16px;
+    color: white;
+    background-color: #245b78;
+}
+
+.header-section header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-section h1 {
+    margin-top: 0;
+}
+
+.navigation a {
+    margin-right: 12px;
+    color: white;
+}
+
+.navigation p {
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px 16px;
+}
+
+.about-me,
+.content-section,
+.gallery,
+.table-section,
+.contact-section {
+    margin-bottom: 20px;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.about-me h2,
+.content-section h2,
+.gallery h2,
+.contact-section h2 {
+    margin-top: 0;
+    color: #245b78;
+}
+
+.p1 {
+    margin-bottom: 0;
+}
+
+.content-section ul,
+.content-section ol {
+    padding-left: 24px;
+}
+
+.gallery-images {
+    display: block;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.first-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.first-table caption {
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.first-table th,
+.first-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.first-table th {
+    color: white;
+    background-color: #245b78;
+}
+
+.contact-form label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 9px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 9px 16px;
+    color: white;
+    background-color: #245b78;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #173d52;
+}
+
+footer {
+    min-height: 24px;
+}
+
+@media (max-width: 600px) {
+    .first-table th,
+    .first-table td {
+        padding: 7px;
+        font-size: 0.9rem;
+    }
+
+    .gallery-images img {
+        max-width: 100%;
+    }
+}
